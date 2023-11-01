@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-dailyshot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": ".eslintrc.js",
   "repository": {
     "url": "https://github.com/dailyshot-dev/eslint-config-dailyshot.git",

@@ -1,6 +1,19 @@
 module.exports = {
-  extends: ['airbnb', 'airbnb-typescript'],
-
+  root: true,
+  extends: [
+    'airbnb',
+    'airbnb-typescript',
+    'eslint:recommended',
+    'plugin:prettier/recommended',
+    'prettier',
+  ],
+  plugins: ['prettier', '@typescript-eslint'],
+  parser: '@typescript-eslint/parser',
+  env: {
+    es6: true,
+    node: true,
+    browser: true,
+  },
   rules: {
     'max-len': [
       'error',
@@ -14,7 +27,14 @@ module.exports = {
         ignoreTemplateLiterals: true,
       },
     ],
-
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': 'error',
+    'jsx-a11y/label-has-associated-control': [
+      2,
+      {
+        labelAttributes: ['htmlFor'],
+      },
+    ],
     '@typescript-eslint/lines-between-class-members': 'off',
     '@typescript-eslint/indent': 'off',
     '@typescript-eslint/naming-convention': 'off',
@@ -70,5 +90,13 @@ module.exports = {
     'jsx-a11y/label-has-for': 'off',
     'jsx-a11y/anchor-is-valid': 'off',
     'jsx-a11y/no-autofocus': 'off',
+    overrides: [
+      {
+        files: ['*.ts', '*.tsx'],
+        rules: {
+          'no-undef': 'off',
+        },
+      },
+    ],
   },
 };

@@ -90,13 +90,13 @@ module.exports = {
     'jsx-a11y/label-has-for': 'off',
     'jsx-a11y/anchor-is-valid': 'off',
     'jsx-a11y/no-autofocus': 'off',
-    overrides: [
-      {
-        files: ['*.ts', '*.tsx'],
-        rules: {
-          'no-undef': 'off',
-        },
-      },
-    ],
   },
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx'],
+      rules: {
+        'no-undef': 'off',
+      },
+    },
+  ],
 };

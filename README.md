@@ -19,7 +19,7 @@ module.exports = {
 };
 ```
 
-In your .prettier.js:
+In your .prettierrc.js:
 
 ```javascript
 module.exports = require('eslint-config-dailyshot/.prettierrc.js');
